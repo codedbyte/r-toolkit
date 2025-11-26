@@ -2,27 +2,27 @@
 
 ## 1. Title & Objective
 
-### **Title**
+### Title
 
 **Getting Started with Data Visualization in R**
 
-### **Objective**
+### Objective
 
 This toolkit provides a complete beginner-friendly guide to setting up an R programming environment, understanding core data visualization concepts, and creating publication-quality graphics using the **ggplot2** package.
 
 ## Why This Technology?
 
-### **What technology did I choose?**
+### What technology did I choose?
 
 I chose **R**, with a focus on the **ggplot2** package for data visualization.
 
-### **Why did I choose it?**
+### Why did I choose it?
 
 R is an industry standard for statistical computing and data visualization. For someone interested in Machine Learning, learning how to manipulate and visualize data is foundational before moving into more complex Python-based ML models.
 
-R has a large ecosystem, and **ggplot2’s “grammar of graphics”** makes it ideal for building professional visualizations with clean, structured, layered syntax.
+R has a large ecosystem, and **ggplot2's "grammar of graphics"** makes it ideal for building professional visualizations with clean, structured, layered syntax.
 
-### **End Goal**
+### End Goal
 
 By the end of this toolkit, you will be able to:
 
@@ -32,10 +32,9 @@ By the end of this toolkit, you will be able to:
 * Create publication-quality scatter plots with trend lines
 * Save and export visualizations
 
-
 ## 2. Quick Summary of the Technology
 
-### **What is R?**
+### What is R?
 
 R is a free and open-source programming language and software environment designed specifically for:
 
@@ -45,15 +44,14 @@ R is a free and open-source programming language and software environment design
 
 It has **19,000+ packages** available on CRAN (Comprehensive R Archive Network) for specialized analytical tasks.
 
-### **Key Strengths of R**
+### Key Strengths of R
 
 1. **Statistical Analysis** – Functions for regression, hypothesis testing, and time-series analysis
 2. **Data Visualization** – High-quality graphics, especially using **ggplot2**
 3. **Data Manipulation** – Packages like **dplyr** make data transformation intuitive
 4. **Reproducible Research** – Seamless integration with **R Markdown** for blending code, analysis, and documentation
 
-
-### **Where is R Used?**
+### Where is R Used?
 
 R is widely used in:
 
@@ -64,11 +62,9 @@ R is widely used in:
 * Machine Learning & Predictive Modeling
 * Government & Policy Analysis
 
+### What is ggplot2?
 
-## What is ggplot2?
-
-**ggplot2** is R’s most popular data visualization package, created by Hadley Wickham.
-It implements the **Grammar of Graphics**, a formal system for building visualizations by layering components:
+**ggplot2** is R's most popular data visualization package, created by Hadley Wickham. It implements the **Grammar of Graphics**, a formal system for building visualizations by layering components:
 
 * **Data** – The dataset being visualized
 * **Aesthetics (aes)** – Mappings (x-axis, y-axis, color, size)
@@ -77,77 +73,62 @@ It implements the **Grammar of Graphics**, a formal system for building visualiz
 
 This layered approach makes it simple to create complex, publication-ready graphics with minimal, readable code.
 
-## Real-World Example
+### Real-World Example
 
 Organizations such as **Facebook**, **Google**, **Microsoft**, and major pharmaceutical companies rely on R for statistical analysis, research, and reporting.
 
-
-Here is the section rewritten in clean, consistent **Markdown** for your README:
-
-
 ## 3. System Requirements
 
-### **Operating System**
+### Operating System
 
 * Windows 10 or later
 * macOS 10.13 (High Sierra) or later
 * Linux (Ubuntu 20.04+, Fedora, Debian)
 
-### **Core Software**
+### Core Software
 
-* **R (Base Distribution)** — Version **4.0 or later** recommended
+* **R (Base Distribution)** – Version **4.0 or later** recommended
 * **Minimum 2 GB RAM** (4 GB+ recommended)
 * **500 MB** free disk space
 
-### **Recommended IDE**
+### Recommended IDE
 
-* **RStudio Desktop** — The most widely used IDE for R, offering syntax highlighting, debugging tools, project management, and integrated plotting.
+* **RStudio Desktop** – The most widely used IDE for R, offering syntax highlighting, debugging tools, project management, and integrated plotting.
 
-### **Required Packages**
+### Required Packages
 
-* **ggplot2** — For creating professional visualizations
-
+* **ggplot2** – For creating professional visualizations
 
 ## 4. Installation and Setup Instructions
 
-### **Step 1: Install R**
+### Step 1: Install R
 
 Before installing RStudio, the base R language must be installed.
 
-1. Go to the CRAN website:
-   👉 [https://cran.r-project.org/](https://cran.r-project.org/)
+1. Go to the CRAN website: [https://cran.r-project.org/](https://cran.r-project.org/)
 2. Download R for your operating system:
+   * **Windows**: Download R for Windows → base → "Download R-4.x.x for Windows"
+   * **macOS**: Download R for macOS → choose the .pkg file for Intel or Apple Silicon
+   * **Linux**: Follow distribution-specific instructions provided on CRAN
+3. Run the downloaded installer
+4. Accept the default installation settings
+5. Verify installation by opening R – you should see the R console
 
-   * **Windows**:
-     *Download R for Windows → base → "Download R-4.x.x for Windows"*
-   * **macOS**:
-     *Download R for macOS → choose the .pkg file for Intel or Apple Silicon*
-   * **Linux**:
-     Follow distribution-specific instructions provided on CRAN.
-3. Run the downloaded installer.
-4. Accept the default installation settings.
-5. Verify installation by opening R — you should see the R console.
-   *(Image placeholder: `r.png`)*
-
-### **Step 2: Install RStudio**
+### Step 2: Install RStudio
 
 RStudio provides a user-friendly, feature-rich interface for working with R.
 
-1. Visit the download page:
-   👉 [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
-2. Click **"Download RStudio Desktop"** (free version).
-3. Choose your operating system and download the installer.
-4. Run the installer and accept the default settings.
-5. Open **RStudio** — you should see four main panes:
-
+1. Visit the download page: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+2. Click **"Download RStudio Desktop"** (free version)
+3. Choose your operating system and download the installer
+4. Run the installer and accept the default settings
+5. Open **RStudio** – you should see four main panes:
    * **Top-left:** Script Editor (for writing code)
    * **Bottom-left:** Console (for running commands)
    * **Top-right:** Environment / History
    * **Bottom-right:** Files / Plots / Packages / Help
-     *(Image placeholder: `rstudio.png`)*
-Here is the section rewritten in clean, consistent Markdown with properly formatted code blocks:
 
-### **Step 3: Install the Plotting Package**
+### Step 3: Install the Plotting Package
 
 To create visualizations, you need to install **ggplot2**.
 
@@ -157,15 +138,11 @@ To create visualizations, you need to install **ggplot2**.
    install.packages("ggplot2")
    ```
 
-   *(Image placeholder: `rconsole.png`)*
+2. Press **Enter** and wait for the installation to complete
+3. You will see text scrolling as packages download – this is normal
+4. When the `>` prompt appears again, the installation is complete
 
-2. Press **Enter** and wait for the installation to complete.
-
-3. You will see text scrolling as packages download — this is normal.
-
-4. When the `>` prompt appears again, the installation is complete.
-
-### **Verify Installation**
+### Verify Installation
 
 In the console, run:
 
@@ -176,13 +153,13 @@ library(ggplot2)
 
 ## 5. Minimal Working Example
 
-This example demonstrates R’s core capabilities:
+This example demonstrates R's core capabilities:
 
 * Loading data
 * Performing statistical analysis
 * Creating visualizations
 
-### **What This Example Does**
+### What This Example Does
 
 * Loads the built-in `mtcars` dataset (cars from the 1974 *Motor Trend* magazine)
 * Calculates mean, median, and standard deviation for fuel efficiency (MPG)
@@ -190,8 +167,7 @@ This example demonstrates R’s core capabilities:
 * Adds a linear regression trend line
 * Saves the plot as a high-resolution image
 
-
-### **R Code Example**
+### R Code Example
 
 ```r
 # Load Required Visualization Library
@@ -202,10 +178,10 @@ data(mtcars)
 
 # Explore the dataset structure
 cat("Dataset dimensions (rows X columns):", dim(mtcars), "\n")
-cat("\nFirst few rows of the dataset: \n")
+cat("\nFirst few rows of the dataset:\n")
 print(head(mtcars, 3))
 
-cat("\nColumn names: \n")
+cat("\nColumn names:\n")
 print(names(mtcars))
 
 # Calculate basic descriptive statistics (MPG - Miles Per Gallon)
@@ -232,8 +208,8 @@ cat("(Negative correlation means heavier cars have lower MPG)\n")
 
 # Create a publication-quality scatter plot
 plot <- ggplot(mtcars, aes(x = wt, y = mpg)) +
-  geom_point(color = "steelblue", size = 3, alpha = 0.7) +   # Scatter points
-  geom_smooth(method = "lm", color = "red", se = TRUE, alpha = 0.2) +  # Trend line
+  geom_point(color = "steelblue", size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", color = "red", se = TRUE, alpha = 0.2) +
   labs(
     title = "Relationship Between Car Weight and Fuel Efficiency",
     subtitle = "Data from 1974 Motor Trend Magazine (32 automobiles)",
@@ -243,10 +219,10 @@ plot <- ggplot(mtcars, aes(x = wt, y = mpg)) +
   ) +
   theme_minimal() +
   theme(
-    plot.title      = element_text(hjust = 0.5, face = "bold", size = 14),
-    plot.subtitle   = element_text(hjust = 0.5, size = 10, color = "gray40"),
-    axis.title      = element_text(face = "bold"),
-    plot.caption    = element_text(size = 8, color = "gray50")
+    plot.title    = element_text(hjust = 0.5, face = "bold", size = 14),
+    plot.subtitle = element_text(hjust = 0.5, size = 10, color = "gray40"),
+    axis.title    = element_text(face = "bold"),
+    plot.caption  = element_text(size = 8, color = "gray50")
   )
 
 # Display plot in RStudio
@@ -274,11 +250,11 @@ cat("heavier vehicles consume more fuel (lower MPG). This makes\n")
 cat("physical sense: more weight requires more energy to move.\n")
 ```
 
+### Expected Output
 
-### **Expected Output**
+#### Console Output
 
-#### **Console Output**
-
+```
 Dataset dimensions (rows x columns): 32 11
 
 First few rows of the dataset:
@@ -302,97 +278,89 @@ Correlation between weight and MPG: -0.868
 ========================================
 Plot saved as 'mpg_vs_weight_analysis.png'
 Check your working directory for the file.
+========================================
 ```
 
-## Visual Output
+#### Visual Output
 
-A scatter plot will appear in RStudio’s **Plots** pane showing:
+A scatter plot will appear in RStudio's **Plots** pane showing:
 
 * Blue points representing each car
 * A red linear regression line showing the negative relationship
 * Professional labels and clean formatting
 * A gray confidence interval surrounding the trend line
 
-*(Image placeholder: `mpg_vs_weight_analysis.png`)*
-
-Here’s your final section converted into clean, well-structured **Markdown** for your README:
-
-
 ## 6. AI Prompt Journal
 
 This section documents my learning process using generative AI tools such as **Claude** and **Gemini** as tutors.
 
-### **Prompt 1: Initial Understanding**
+### Prompt 1: Initial Understanding
 
 **Prompt Used:** Conceptual Understanding Prompt from *Learning with AI*
 
 > I'm currently proficient in Python and want to learn R for data visualization. Before diving into code:
 >
-> 1. What are the key philosophical differences between Java and R?
-> 2. What problems was Java designed to solve?
+> 1. What are the key philosophical differences between Python and R?
+> 2. What problems was R designed to solve?
 > 3. What mental models should I adjust coming from Python?
 > 4. What are common misconceptions Python developers have about R?
 
-**AI Response Summary:**
+**Key Insights:**
 
-* R was specifically designed for statistical analysis and has superior built-in statistical functions compared to Python.
-* Python is more general-purpose, while R excels in data visualization and statistical modeling.
-* R uses 1-based indexing instead of Python’s 0-based indexing.
+* R was specifically designed for statistical analysis and has superior built-in statistical functions compared to Python
+* Python is more general-purpose, while R excels in data visualization and statistical modeling
+* R uses 1-based indexing instead of Python's 0-based indexing
 
 **My Evaluation:**
 
-* Very helpful for understanding R’s core concepts.
-* Follow-up prompt clarified that R is better for pure data analysis and visualization, whereas Python is preferable for integrating analysis into production applications.
+* Very helpful for understanding R's core concepts
+* Follow-up prompt clarified that R is better for pure data analysis and visualization, whereas Python is preferable for integrating analysis into production applications
 
----
-
-### **Prompt 2: Installation Guidance**
+### Prompt 2: Installation Guidance
 
 **Prompt Used:** Guided Implementation Prompt from *Learning with AI*
 
-> I’m a data science student interested in learning R. I have a basic understanding of R and need help setting up my development environment on Windows 11. Explain the difference between R and RStudio and guide me step by step to install them.
+> I'm a data science student interested in learning R. I have a basic understanding of R and need help setting up my development environment on Windows 11. Explain the difference between R and RStudio and guide me step by step to install them.
 
-**AI Response Summary:**
+**Key Insights:**
 
-* R is the programming language; RStudio is the IDE (like VS Code for JavaScript).
-* Install R first from CRAN, then RStudio. Both are needed.
+* R is the programming language; RStudio is the IDE (like VS Code for JavaScript)
+* Install R first from CRAN, then RStudio. Both are needed
 
 **My Evaluation:**
 
-* Helped clarify the difference between R (engine) and RStudio (interface/IDE).
-* Installation was successful on the first try.
+* Helped clarify the difference between R (engine) and RStudio (interface/IDE)
+* Installation was successful on the first try
 
-
-### **Prompt 3: Understanding ggplot2**
+### Prompt 3: Understanding ggplot2
 
 **Prompt Used:** Understanding how a specific feature works in existing codebases
 
-> I’m trying to understand how ggplot2 works in R. Could you explain:
+> I'm trying to understand how ggplot2 works in R. Could you explain:
 >
 > 1. What this package actually does
 > 2. Execution flow when importing a dataset
 > 3. How files interact
 > 4. External dependencies
 > 5. A mental model for understanding ggplot2
->    Plus suggest 3 small challenges without giving the code.
+>
+> Plus suggest 3 small challenges without giving the code.
 
-**AI Response Summary:**
+**Key Insights:**
 
 * ggplot2 builds plots in layers:
-
   * Data layer
   * Aesthetic mapping layer (`aes`)
   * Geometry layer (`geom_point`, `geom_line`, etc.)
   * Theme layer (colors, fonts)
-* Base R plotting uses function arguments instead.
-* Grammar of graphics allows more flexible and complex visualizations.
+* Base R plotting uses function arguments instead
+* Grammar of graphics allows more flexible and complex visualizations
 
 **My Evaluation:**
 
-* Conceptual explanation was good, but `aes()` function required a follow-up prompt for clarity.
+* Conceptual explanation was good, but `aes()` function required a follow-up prompt for clarity
 
-
-### **Prompt 4: Generating the Working Example**
+### Prompt 4: Generating the Working Example
 
 **Prompt Used:** Guided Implementation Prompt
 
@@ -402,55 +370,55 @@ This section documents my learning process using generative AI tools such as **C
 > 2. Calculates mean, median, and standard deviation of MPG
 > 3. Creates a scatter plot (weight vs MPG) with ggplot2 and a trend line
 > 4. Saves the plot
->    Include detailed comments explaining each step.
+>
+> Include detailed comments explaining each step.
 
-**AI Response Summary:**
+**Key Insights:**
 
-* Provided complete code with extensive comments.
-* Included data loading, statistical functions, ggplot2 syntax, and exporting via `ggsave()`.
+* Complete code with extensive comments was provided
+* Included data loading, statistical functions, ggplot2 syntax, and exporting via `ggsave()`
 
 **My Evaluation:**
 
-* Code ran perfectly on first attempt.
-* Comments clarified each step.
-* Prompt was highly effective due to specificity and request for explanations.
-
+* Code ran perfectly on first attempt
+* Comments clarified each step
+* Prompt was highly effective due to specificity and request for explanations
 
 ## 7. Common Issues & Fixes
 
-### **Issue 1: Syntax Error – Missing Plus Sign**
+### Issue 1: Syntax Error – Missing Plus Sign
 
-* **Problem:** ggplot code threw an "unexpected input" error.
-* **Solution:** Layers in ggplot2 must be connected with `+`.
-* **Resolution:** Used AI to identify missing `+`.
+* **Problem:** ggplot code threw an "unexpected input" error
+* **Solution:** Layers in ggplot2 must be connected with `+`
+* **Resolution:** Used AI to identify missing `+`
 
-### **Issue 2: "Object 'mtcars' not found"**
+### Issue 2: "Object 'mtcars' not found"
 
-* **Problem:** Tried using `mtcars` dataset directly.
+* **Problem:** Tried using `mtcars` dataset directly
 * **Solution:** Built-in datasets must be loaded with:
 
 ```r
 data(mtcars)
 ```
 
-* **Resolution:** Learned that built-in datasets are not automatically available.
+* **Resolution:** Learned that built-in datasets are not automatically available
 
-### **Issue 3: Understanding R’s Dollar Sign Notation**
+### Issue 3: Understanding R's Dollar Sign Notation
 
-* **Problem:** Syntax `mtcars$mpg` looked strange compared to Python’s `mtcars['mpg']`.
-* **Explanation:** `$` extracts a single column as a vector.
+* **Problem:** Syntax `mtcars$mpg` looked strange compared to Python's `mtcars['mpg']`
+* **Explanation:** `$` extracts a single column as a vector
 
-  ```r
-  mtcars$mpg      # Returns mpg column as vector
-  mtcars[["mpg"]] # Alternative syntax
-  mtcars[, "mpg"] # Also works
-  ```
-* **Why it matters:** Functions like `mean()` and `sd()` expect vectors, not data frames.
+```r
+mtcars$mpg      # Returns mpg column as vector
+mtcars[["mpg"]] # Alternative syntax
+mtcars[, "mpg"] # Also works
+```
 
+* **Why it matters:** Functions like `mean()` and `sd()` expect vectors, not data frames
 
 ## 8. References
 
-### **Official Documentation**
+### Official Documentation
 
 * [CRAN – Comprehensive R Archive Network](https://cran.r-project.org/)
 * [RStudio User Guide](https://www.rstudio.com/resources/documentation/)
@@ -458,28 +426,27 @@ data(mtcars)
 * [R Manuals](https://cran.r-project.org/manuals.html)
 * [Quick-R: Data Visualization](https://www.statmethods.net/graphs/)
 
-### **Video Tutorials**
+### Video Tutorials
 
 * **R Programming Tutorial – freeCodeCamp** (YouTube, 2-hour intro)
 * **Data Visualization with ggplot2**
 * **StatQuest: R Programming – Statistics with R**
 * **RStudio Essentials**
 
-### **Dataset Resources**
+### Dataset Resources
 
 * [Kaggle Datasets](https://www.kaggle.com/datasets)
 * [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
 * Built-in R datasets (`datasets` package)
 
-### **AI Learning Tools Referenced**
+### AI Learning Tools Referenced
 
 * Claude
 * ChatGPT
 
-
 ## Conclusion
 
-This toolkit has taken you from zero to creating your first data visualization in R. You’ve learned:
+This toolkit has taken you from zero to creating your first data visualization in R. You've learned:
 
 * Fundamentals of R and its ecosystem
 * How to install and configure your development environment
@@ -487,3 +454,9 @@ This toolkit has taken you from zero to creating your first data visualization i
 * Using AI effectively as a learning tool
 * Debugging common issues independently
 
+**Next Steps:**
+
+* Explore additional ggplot2 geometries (bar charts, histograms, box plots)
+* Learn data manipulation with the `dplyr` package
+* Practice with real-world datasets from Kaggle
+* Create reproducible reports with R Markdown
